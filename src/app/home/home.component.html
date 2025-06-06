@@ -1,0 +1,205 @@
+<!-- Hero Section -->
+<section class="relative bg-primary text-tertiary py-20">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Galants & Legends</h1>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-6">Quantity Surveying Excellence in Botswana</h2>
+        <p class="text-lg mb-8">Specialized in bill of quantity generation, quantity surveying consultancy, project management and construction advisory services.</p>
+        <div class="flex flex-wrap gap-4">
+          <a [routerLink]="['/services']" class="bg-secondary hover:bg-opacity-90 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">Our Services</a>
+          <a [routerLink]="['/contact']" class="bg-transparent hover:bg-tertiary hover:text-primary hover:bg-opacity-20 border-2 border-tertiary text-tertiary font-semibold py-3 px-6 rounded-lg transition duration-300">Contact Us</a>
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <div class="bg-accent p-1 rounded-lg shadow-xl">
+          <img src="./home/home.jpg" alt="Construction project in Botswana" class="rounded-lg w-full h-200" onerror="this.src='https://via.placeholder.com/600x400?text=Galants+%26+Legends';this.onerror='';">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-0 left-0 right-0 h-16 bg-tertiary" style="clip-path: polygon(0 100%, 100% 100%, 100% 0);"></div>
+</section>
+
+<!-- Services Section -->
+<section class="py-16 bg-tertiary">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-primary mb-4">Our Specialized Services</h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">Delivering comprehensive quantity surveying and construction advisory services to projects of all sizes across Botswana.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Service 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-t-4 border-primary">
+        <div class="text-primary mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-primary">Bill of Quantities</h3>
+        <p class="text-gray-600">Precise and detailed bill of quantities generation for construction projects of all sizes.</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-t-4 border-primary">
+        <div class="text-primary mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-primary">Quantity Surveying</h3>
+        <p class="text-gray-600">Comprehensive quantity surveying consultancy to optimize project costs and resources.</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-t-4 border-primary">
+        <div class="text-primary mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-primary">Project Management</h3>
+        <p class="text-gray-600">Expert project management services ensuring timely delivery within budget constraints.</p>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-t-4 border-primary">
+        <div class="text-primary mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-primary">Construction Advisory</h3>
+        <p class="text-gray-600">Strategic construction advisory services to navigate complex project challenges.</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-10">
+      <a [routerLink]="['/services']" class="inline-block bg-primary hover:bg-opacity-90 text-tertiary font-semibold py-3 px-6 rounded-lg transition duration-300">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-primary mb-4">Our Featured Projects</h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">From small-scale developments to large commercial complexes, we've successfully delivered projects ranging from 20 million to 300 million Botswana Pula.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Project 1 -->
+      <div class="bg-tertiary rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+        <img src="./home/commercial.jpg" alt="Commercial Building Project" class="w-full h-64 object-cover" onerror="this.src='https://via.placeholder.com/600x400?text=Commercial+Building';this.onerror='';">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-primary">Commercial Complex</h3>
+          <p class="text-gray-600 mb-4">A 250 million Pula commercial complex in Gaborone with retail spaces and offices.</p>
+          <div class="flex justify-between items-center">
+            <span class="text-sm text-gray-500">Gaborone, Botswana</span>
+            <span class="bg-secondary text-white text-sm py-1 px-3 rounded-full">Completed</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-tertiary rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+        <img src="./home/residential.jpg" alt="Residential Development" class="w-full h-64 object-cover" onerror="this.src='https://via.placeholder.com/600x400?text=Residential+Development';this.onerror='';">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-primary">Residential Development</h3>
+          <p class="text-gray-600 mb-4">A 75 million Pula residential development with 120 units in Francistown.</p>
+          <div class="flex justify-between items-center">
+            <span class="text-sm text-gray-500">Francistown, Botswana</span>
+            <span class="bg-secondary text-white text-sm py-1 px-3 rounded-full">Completed</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-tertiary rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+        <img src="./home/government.jpg" alt="Government Infrastructure" class="w-full h-64 object-cover" onerror="this.src='https://via.placeholder.com/600x400?text=Government+Infrastructure';this.onerror='';">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2 text-primary">Government Infrastructure</h3>
+          <p class="text-gray-600 mb-4">A 180 million Pula government infrastructure project in Maun.</p>
+          <div class="flex justify-between items-center">
+            <span class="text-sm text-gray-500">Maun, Botswana</span>
+            <span class="bg-accent text-primary text-sm py-1 px-3 rounded-full">In Progress</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-16 bg-primary text-tertiary">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">What Our Clients Say</h2>
+      <p class="text-lg max-w-3xl mx-auto opacity-90">Hear from our satisfied clients about their experience working with Galants & Legends.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+        <div class="flex items-center mb-4">
+          <div class="text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+            </svg>
+          </div>
+        </div>
+        <p class="mb-4 text-primary">Galants & Legends provided exceptional quantity surveying services for our commercial development. Their attention to detail and cost management expertise saved us millions of Pula.</p>
+        <div class="mt-6 text-gray-700">
+          <p class="font-semibold">Tebogo Moatlhodi</p>
+          <p class="text-sm opacity-80">CEO, Botswana Development Corporation</p>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+        <div class="flex items-center mb-4">
+          <div class="text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+            </svg>
+          </div>
+        </div>
+        <p class="mb-4 text-primary">Working with Galants & Legends on our residential development was a pleasure. Their project management skills ensured we completed on time and within budget.</p>
+        <div class="mt-6 text-gray-700">
+          <p class="font-semibold">Lesego Kgotla</p>
+          <p class="text-sm opacity-80">Director, Pula Properties</p>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+        <div class="flex items-center mb-4">
+          <div class="text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+            </svg>
+          </div>
+        </div>
+        <p class="mb-4 text-primary">The construction advisory services provided by Galants & Legends were invaluable to our infrastructure project. Their expertise helped us navigate complex challenges.</p>
+        <div class="mt-6 text-gray-700">
+          <p class="font-semibold">Mpho Seretse</p>
+          <p class="text-sm opacity-80">Project Manager, Botswana Public Works</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="py-16 bg-accent">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-primary mb-6">Ready to Start Your Project?</h2>
+    <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">Contact us today to discuss how Galants & Legends can help with your next construction or development project in Botswana.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a [routerLink]="['/contact']" class="bg-primary hover:bg-opacity-90 text-tertiary font-semibold py-3 px-8 rounded-lg transition duration-300">Contact Us</a>
+      <a [routerLink]="['/services']" class="bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-tertiary font-semibold py-3 px-8 rounded-lg transition duration-300">Our Services</a>
+    </div>
+  </div>
+</section>

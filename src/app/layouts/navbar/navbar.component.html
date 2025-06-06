@@ -1,0 +1,29 @@
+<nav class="bg-primary border-gray-200 shadow-md">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a [routerLink]="['/']" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <span class="self-center text-2xl font-semibold whitespace-nowrap text-tertiary">Galants & Legends</span>
+    </a>
+    <button (click)="toggleMenu()" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-tertiary rounded-lg md:hidden hover:bg-accent focus:outline-none focus:ring-2 focus:ring-secondary" aria-controls="navbar-default" [attr.aria-expanded]="isMenuOpen">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+      </svg>
+    </button>
+    <div [ngClass]="{'hidden': !isMenuOpen, 'block': isMenuOpen}" class="w-full md:block md:w-auto" id="navbar-default">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-accent rounded-lg bg-primary md:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+        <li>
+          <a [routerLink]="['/']" routerLinkActive="md:text-secondary text-white" [routerLinkActiveOptions]="{exact: true}" class="block py-2 px-3 bg-secondary rounded md:bg-transparent md:text-tertiary md:p-0 md:hover:text-secondary" aria-current="page" (click)="closeMenu()">Home</a>
+        </li>
+        <li>
+          <a [routerLink]="['/about']" routerLinkActive="md:text-secondary" class="block py-2 px-3 text-tertiary rounded hover:bg-accent md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0" (click)="closeMenu()">About</a>
+        </li>
+        <li>
+          <a [routerLink]="['/services']" routerLinkActive="md:text-secondary" class="block py-2 px-3 text-tertiary rounded hover:bg-accent md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0" (click)="closeMenu()">Services</a>
+        </li>
+        <li>
+          <a [routerLink]="['/contact']" routerLinkActive="md:text-secondary" class="block py-2 px-3 text-tertiary rounded hover:bg-accent md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0" (click)="closeMenu()">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
